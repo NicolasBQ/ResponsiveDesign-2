@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+:root {
+    --primary-color: #6772e5;
+    --secondary-color:#24b47e;
+    --third-color:#525f7f;
+    --white:#fff;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    background-color: #e2e2e2;
+}
+
+h1 {
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    padding: .2em 0;
+}
+
+h2 {
+    font-size: clamp(1.3rem, 3vw, 2.5rem);
+    margin-top: 3.5rem ;
+}
+
+.header-text {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    padding: 1rem 0;
+}
+
+
+p {
+    line-height: 1.5;
+    color: var(--third-color);
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.weight-300 {
+    font-weight: 300;
+}
+
+.primary-color {
+    color:var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.call-to-action {
+    display: inline;
+    padding: 1em;
+    margin-top: 1rem;
+    max-width: 10rem;
+    background-color: var(--white);
+    border: none;
+    border-radius: 1em;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+header {
+    min-height: 50vh;
+    background-image: url("https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(70%, 80rem);
+    background-color: var(--white);
+    height: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+.split > * + * {
+    margin-top: 2rem;
+}
+
+img {
+    width: min(15%, 4rem)
+}
+
+@media (min-width:60em) {
+    header {
+        min-height: 100vh;
+    }
+    .split {
+        flex-direction: row;
+    }
+    .split > * + * {
+        margin-left: 2rem;
+    }
+}
